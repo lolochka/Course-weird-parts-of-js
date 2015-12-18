@@ -353,7 +353,7 @@ function checkPastLimitSimple(limiter) {
     }
 }
 
-var arr1 = [1,2,3];
+var arr1 = [1,2,3,4,5,6];
 console.log(arr1);
 
 var arr2 = mapForEach(arr1, function(a){return a*2});
@@ -366,12 +366,18 @@ var arr4 = mapForEach(arr1, function(a){return 'This is ' + a});
 console.log(arr4);
 
 var arr5 = mapForEach(arr1, checkPastLimitSimple(5));
-console.log(arr5);*/
+console.log(arr5);
 
+var arr6 = mapForEach(arr1, function(item) { return item * 3 });
+console.log(arr6);
 
+var arr7 = _.filter(arr1, function(item) { return item % 2 === 0});
+console.log(arr7);*/
 
+var arr1 = [1,5,3,6,5,6];
 
-
+var arr2 = _.uniq(arr1);
+console.log(arr2);
 
 
 
