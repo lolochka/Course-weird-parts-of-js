@@ -5,21 +5,24 @@
     return new Greetr.init(firstname, lastname, language);
   };
   
-  var supportedLangs = ['en', 'es'];
+  var supportedLangs = ['en', 'es', 'ru'];
   
   var greetings = {
     en: 'Hello',
-    es: 'Hola'
+    es: 'Hola',
+    ru: 'Привет'
   };
   
   var formalGreetings = {
     en: 'Greetings',
-    es: 'Saludos'
+    es: 'Saludos',
+    ru: 'Здравствуйте'
   };
   
   var logMessages = {
     en: 'Logged in',
-    es: 'Insio sesion'
+    es: 'Insio sesion',
+    ru: 'Залогинен'
   };
   
   Greetr.prototype = {
